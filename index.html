@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BMI Calculator</h2>
+        <label for="feet">Height:</label>
+        <input type="number" id="feet" placeholder="Feet">
+        <input type="number" id="inches" placeholder="Inches">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight in kg">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <h3 id="result"></h3>
+        <p id="category"></p>
+    </div>
+    <div id="diet-tips" class="tips-container" style="display: none;">
+        <h2>Diet & Fitness Tips</h2>
+        <div id="underweight" class="tips-box" style="display: none;">
+            <h3 style="color: blue;">Underweight </h3>
+            <p>To gain healthy weight, try these tips:</p>
+            <ul>
+                <li>Eat calorie-dense foods like nuts, avocados, and dairy.</li>
+                <li>Increase protein intake (chicken, eggs, beans) to build muscle.</li>
+                <li>Eat more frequently – 5-6 small meals per day.</li>
+                <li>Strength training exercises to build muscle mass.</li>
+            </ul>
+        </div>
+        <div id="normal" class="tips-box" style="display: none;">
+            <h3 style="color: green;">Normal </h3>
+            <p>Maintain a balanced lifestyle:</p>
+            <ul>
+                <li>Continue eating a balanced diet (vegetables, lean protein, whole grains).</li>
+                <li>Stay active with at least 30 minutes of daily exercise.</li>
+                <li>Stay hydrated and manage stress through mindfulness or yoga.</li>
+                <li>Monitor your weight regularly to maintain a healthy BMI.</li>
+            </ul>
+        </div>
+        <div id="overweight" class="tips-box" style="display: none;">
+            <h3 style="color: orange;">Overweight </h3>
+            <p>To achieve a healthier weight:</p>
+            <ul>
+                <li>Reduce sugary foods and processed snacks.</li>
+                <li>Eat high-fiber foods (vegetables, whole grains) to stay full longer.</li>
+                <li>Exercise regularly: walking, jogging, or gym workouts.</li>
+                <li>Drink plenty of water and avoid sugary drinks.</li>
+            </ul>
+        </div>
+        <div id="obese" class="tips-box" style="display: none;">
+            <h3 style="color: red;">Obese </h3>
+            <p>For better health, follow these steps:</p>
+            <ul>
+                <li>Follow a calorie-controlled, nutrient-dense diet.</li>
+                <li>Increase physical activity (start with 20-30 min daily walks).</li>
+                <li>Avoid fast food, fried foods, and sugary beverages.</li>
+                <li>Consult a doctor or nutritionist for a personalized diet plan.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
